@@ -11,3 +11,10 @@ function convert (minutes:number):number {
 }
 // console.log(convert(5)); //300
 // console.log(convert(2)); //120
+
+//challenge 3: Perimeter of a rectangle
+function findPerimeter(length:number, width:number):number {
+    return 2 * (length + width);
+}
+// console.log(findPerimeter(6, 7)); //26
+// console.log(findPerimeter(20, 10)); //60
