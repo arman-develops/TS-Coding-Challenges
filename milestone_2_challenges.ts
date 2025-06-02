@@ -184,3 +184,22 @@ function linearSearchAll(arr:number[], val:number):number[] {
 }
 // console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
 // console.log(linearSearchAll([5, 3, 7, 1, 4], 10));
+
+// Challenge 14: Count Occurrences
+function countOccurrences(arr: string[]): { [key: string]: number } {
+    const obj: { [key: string]: number } = {};
+
+    for (let i = 0; i < arr.length; i++) {
+        const item = arr[i];
+
+        if (obj[item] === undefined) {
+            obj[item] = 1;
+        } else {
+            obj[item] += 1;
+        }
+    }
+
+    return obj;
+}
+// console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]));
+
