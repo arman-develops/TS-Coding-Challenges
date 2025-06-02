@@ -171,3 +171,16 @@ function reverseLinearSearch(arr:number[], val:number) {
 }
 // console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
 // console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));
+
+// Challenge 13: Linear Search All Indices
+function linearSearchAll(arr:number[], val:number):number[] {
+    let indices:number[] = [];
+    for(let i:number = 0; i < arr.length; i++) {
+        if(arr[i] === val) {
+            indices.push(i);
+        }
+    }
+    return indices;
+}
+// console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
+// console.log(linearSearchAll([5, 3, 7, 1, 4], 10));
