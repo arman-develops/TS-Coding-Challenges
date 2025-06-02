@@ -46,3 +46,15 @@ function findWinner(objArray:Candidates) {
 //     { name: "Charlie", votes: 65 }
 // ];
 // console.log(findWinner(candidates));
+
+// Challenge 4: Longest Word
+function findLongestWord(wordArray: string[]):string {
+    let longestWord:string = wordArray[0]
+    for(let i:number = 0; i < wordArray.length; i++) {
+        if (wordArray[i].length > longestWord.length){
+            longestWord = wordArray[i];
+        }
+    }
+    return longestWord;
+}
+// console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]));
