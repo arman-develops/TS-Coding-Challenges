@@ -131,3 +131,19 @@ function countTruthy(obj: myTypes) {
     return count;
 }
 // console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
+
+// Challenge 10: Average of Numbers
+function average(numArray:number[]):number {
+    let sum:number = 0, len:number = numArray.length;
+    if(len === 0) {
+        return 0;
+    } else {
+        for(let i = 0; i < len; i++) {
+            sum += numArray[i];
+        }
+    }
+    
+    return sum / len;
+}
+// console.log(average([2, 4, 6, 8]));
+// console.log(average([]));
