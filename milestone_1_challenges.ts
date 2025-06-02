@@ -188,3 +188,16 @@ function sumMultiples(n:number, divisor:number):number {
 // console.log(sumMultiples(10, 2));
 // console.log(sumMultiples(15, 3));
 // console.log(sumMultiples(7, 5));
+
+// Challenge 15: Sum of digits
+function sumDigits(num:number) {
+    let sum:number = 0;
+    while(num > 0) {
+        sum = sum + (num % 10);
+        num = Math.floor(num / 10);
+    }
+    return sum;
+}
+// console.log(sumDigits(123));
+// console.log(sumDigits(4567));
+// console.log(sumDigits(0));
