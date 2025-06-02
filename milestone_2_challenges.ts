@@ -97,3 +97,17 @@ function sumEvenNumbers(numArray:number[]):number {
     return sum;
 }
 // console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+// Challenge 8: Difference between the sum of even and odd numbers
+function differenceEvenOdd(numArray:number[]):number {
+    let evenTotal:number = 0, oddTotal:number = 0;
+    for(let i:number = 0; i < numArray.length; i++) {
+        if(numArray[i] % 2 == 0) {
+            evenTotal += numArray[i];
+        }else {
+            oddTotal += numArray[i];
+        }
+    }
+    return evenTotal - oddTotal;
+}
+// console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
