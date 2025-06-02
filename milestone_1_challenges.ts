@@ -134,7 +134,7 @@ function perimeter (i:string, num:number):number {
 // Challenge 11: Sum Of Even Numbers
 function sumEvenNumbers(n:number):number {
     let sum:number = 0;
-    for(let i = 0; i <= n; i++) {
+    for(let i:number = 0; i <= n; i++) {
         if(i % 2 == 0) {
             sum = sum + i;
         }
@@ -148,7 +148,7 @@ function sumEvenNumbers(n:number):number {
 //Challenge 12: Multiply by itself
 function powerUp(num:number, times:number):number {
     let result:number = 1;
-    for(let i = 0; i < times; i++) {
+    for(let i:number = 0; i < times; i++) {
         result = result * num
     }
     return result;
@@ -174,3 +174,17 @@ function factorial(n:number):number {
 // console.log(factorial(0));
 // console.log(factorial(4));
 // console.log(factorial(6));
+
+//Challenge 14: Multiple Sum
+function sumMultiples(n:number, divisor:number):number {
+    let sum:number = 0;
+    for(let i:number = 1; i <= n; i++ ) {
+        if(i % divisor === 0) {
+            sum = sum + i;
+        }
+    }
+    return sum
+}
+// console.log(sumMultiples(10, 2));
+// console.log(sumMultiples(15, 3));
+// console.log(sumMultiples(7, 5));
