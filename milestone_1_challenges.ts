@@ -130,3 +130,17 @@ function perimeter (i:string, num:number):number {
 }
 // console.log(perimeter("s", 7));
 // console.log(perimeter("c", 4));
+
+// Challenge 11: Sum Of Even Numbers
+function sumEvenNumbers(n:number):number {
+    let sum:number = 0;
+    for(let i = 0; i <= n; i++) {
+        if(i % 2 == 0) {
+            sum = sum + i;
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers(6));
+console.log(sumEvenNumbers(10));
+console.log(sumEvenNumbers(5));
