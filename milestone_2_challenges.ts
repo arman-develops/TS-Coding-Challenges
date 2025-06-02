@@ -111,3 +111,23 @@ function differenceEvenOdd(numArray:number[]):number {
     return evenTotal - oddTotal;
 }
 // console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
+
+// Challenge 9: Count Truthy
+type myTypes = {
+    a: number,
+    b: string,
+    c: boolean,
+    d: number,
+    e: null
+}
+function countTruthy(obj: myTypes) {
+    let count: number = 0
+    const values = Object.values(obj)
+    for(let i:number = 0; i < values.length; i++) {
+        if(values[i]) {
+            count += 1
+        }
+    }
+    return count;
+}
+// console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
