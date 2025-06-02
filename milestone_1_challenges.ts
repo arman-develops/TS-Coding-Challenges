@@ -88,3 +88,27 @@ function greetUser(name:string, hour:number):void {
     console.log(greeting);
 }
 // greetUser("Alice", 2);
+
+//Challenge 9: FizzBuzz
+function fizzBuzzCheck(num:number):string {
+    let output = "";
+
+    if(num % 3 === 0 && num % 5 === 0) {
+        return "FizzBuzz";
+    }
+
+    if (num % 3 === 0) {
+        return "Fizz";
+    }
+    if (num % 5 === 0) {
+        return "Buzz";
+    }
+    if(output === "") {
+        return num.toString();
+    }
+    return output
+}
+console.log(fizzBuzzCheck(3));
+console.log(fizzBuzzCheck(10));
+console.log(fizzBuzzCheck(15));
+console.log(fizzBuzzCheck(7));
