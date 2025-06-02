@@ -57,8 +57,8 @@ function findLargest(a:number, b:number, c:number):number {
 
 //challenge 7: BMI Calculator
 function calculateBMI(weight:number, height:number):void {
-    let BMI = weight / (height * height);
-    let category = "";
+    let BMI:number = weight / (height * height);
+    let category:string = "";
     if(BMI < 18.5) {
         category = "Underweight";
     }else if (BMI > 18.5 && BMI < 24.9) {
@@ -75,7 +75,7 @@ function calculateBMI(weight:number, height:number):void {
 
 //Challenge 8: Greetings based on time
 function greetUser(name:string, hour:number):void {
-    let greeting = "";
+    let greeting:string = "";
     if(hour <= 11 && hour >= 5) {
         greeting = `Good morning, ${name}`;
     }else if(hour >= 12 && hour <= 17) {
@@ -91,7 +91,7 @@ function greetUser(name:string, hour:number):void {
 
 //Challenge 9: FizzBuzz
 function fizzBuzzCheck(num:number):string {
-    let output = "";
+    let output:string = "";
 
     if(num % 3 === 0 && num % 5 === 0) {
         return "FizzBuzz";
@@ -108,7 +108,25 @@ function fizzBuzzCheck(num:number):string {
     }
     return output
 }
-console.log(fizzBuzzCheck(3));
-console.log(fizzBuzzCheck(10));
-console.log(fizzBuzzCheck(15));
-console.log(fizzBuzzCheck(7));
+// console.log(fizzBuzzCheck(3));
+// console.log(fizzBuzzCheck(10));
+// console.log(fizzBuzzCheck(15));
+// console.log(fizzBuzzCheck(7));
+
+//challenge 10: Perimeter 2
+function perimeter (i:string, num:number):number {
+    let perimeter:number = 0;
+    switch(i) {
+        case "s":
+            perimeter = 4 * num;
+            break;
+        case "c":
+            perimeter = 6.28 * num;
+            break;
+        default:
+            break;    
+    }
+    return perimeter;
+}
+// console.log(perimeter("s", 7));
+// console.log(perimeter("c", 4));
