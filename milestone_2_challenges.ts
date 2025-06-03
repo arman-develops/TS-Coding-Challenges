@@ -223,7 +223,7 @@ function removeDuplicates(arr:number[]):number[] {
 // console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
 
 // Challenge 16: Most Frequent
-function mostFrequent(arr: number[]) {
+function mostFrequent(arr: (number | string)[]) {
     let count:{[key:string]: number} = {};
     let maxCount:number = 0;
     let mostFrequentValue = null;

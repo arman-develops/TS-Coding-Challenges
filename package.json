@@ -1,0 +1,21 @@
+{
+  "name": "ts-coding-challenges",
+  "version": "1.0.0",
+  "description": "This repository contains solutions to coding challenges completed as part of a two-milestone program aimed at strengthening core programming skills in JavaScript and TypeScript.",
+  "homepage": "https://github.com/arman-develops/TS-Coding-Challenges#readme",
+  "bugs": {
+    "url": "https://github.com/arman-develops/TS-Coding-Challenges/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arman-develops/TS-Coding-Challenges.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "milestone_2_challenges.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc --target es2017 --lib es2017,dom  && node milestone_*_challenges.js"
+  }
+}
